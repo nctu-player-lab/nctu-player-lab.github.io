@@ -40,6 +40,10 @@
         <section>
           <h2>玩家實驗室</h2>
           <caption>Introduction to NCTU Player Lab.</caption>
+          <br>
+          <caption>
+            <a href="https://nctu-player-lab.github.io/">nctu-player-lab.github.io</a>
+          </caption>
         </section>
 
         <section>
@@ -179,20 +183,15 @@
             </div>
           </section>
           <section>
-            <p>FireFly 單板電腦</p>
+            <p>單板電腦</p>
             <div class="d-flex">
               <div class="flex-1">
                 <img src="./img/FireFly_RK3288.JPG">
                 <p>FireFly RK3288</p>
               </div>
-            </div>
-          </section>
-          <section>
-            <p>Arduino</p>
-            <div class="d-flex">
               <div class="flex-1">
                 <img src="./img/Mega2560.JPG">
-                <p>Mega 2560</p>
+                <p>Arduino Mega 2560</p>
               </div>
             </div>
           </section>
@@ -227,13 +226,20 @@
               </div>
             </div>
           </section>
-          <section>各式電子材料與工具
+          <section>
+            <p>各式電子材料、工具</p>
             <div class="d-flex">
-              <div class="flex-1">
-                <img src="./img/electronic_1.JPG">
+              <div class="flex-w-50 highlight">
+                <img src="./img/electronic_2.JPG" alt="">
               </div>
-              <div class="flex-1">
-                <img src="./img/tools_1.JPG">
+              <div class="flex-w-50 highlight">
+                <img src="./img/tools_2.JPG" alt="">
+              </div>
+              <div class="flex-w-50 highlight">
+                <img src="./img/8051.JPG" alt="">
+              </div>
+              <div class="flex-w-50 highlight">
+                <img src="./img/DSC_0027.JPG" alt="">
               </div>
             </div>
           </section>
@@ -507,10 +513,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js" integrity="sha256-+09kLhwACKXFPDvqo4xMMvi4+uXFsRZ2uYGbeN1U8sI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha256-ixSKHrWAL2k0mqVSRju9+to2/uZSEK9+kJRfdNBolG8=" crossorigin="anonymous"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) 
+        ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/pdf.min.css'
+        : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/paper.min.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
     <script>
       Reveal.initialize({
         history: true,
-            });
+        pdfSeparateFragments: true
+      });
     </script>
   </body>
 </html>
