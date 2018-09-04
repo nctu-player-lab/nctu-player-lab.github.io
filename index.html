@@ -129,7 +129,7 @@
                 <ul>
                   <li>三台 PC</li>
                   <ul>
-                    <li class="fragment">Windows XP *1</li>
+                    <li class="fragment">Windows  *1</li>
                     <li class="fragment">Arch Linux *2</li>
                   </ul>
                 </ul>
@@ -154,6 +154,15 @@
             </div>
           </section>
           <section>
+            <p>FireFly 單板電腦</p>
+            <div class="d-flex">
+              <div class="flex-1">
+                <img src="./img/FireFly_RK3288.JPG">
+                <p>FireFly RK3288</p>
+              </div>
+            </div>
+          </section>
+          <section>
             <p>Arduino</p>
             <div class="d-flex">
               <div class="flex-1">
@@ -172,10 +181,6 @@
               <div class="flex-1">
                 <img src="./img/CmodA7_1.JPG">
                 <p>Cmod A7</p>
-              </div>
-              <div class="flex-1">
-                <img src="./img/FireFly_RK3288.JPG">
-                <p>FireFly RK3288</p>
               </div>
             </div>
           </section>
@@ -253,11 +258,33 @@
           </section>
           <section>
             <div>PID visualize</div>
-            <img src="./img/SerialVisualizer.png">
+            <div class="d-flex">
+              <div class="flex-2">
+                <img src="./img/SerialVisualizer.png">
+              </div>
+              <div class="flex-1">
+                <ul>
+                  <li class="fragment">Qt 5</li>
+                  <li class="fragment">即時透過Serial獲取資料</li>
+                  <li class="fragment">將姿態、馬達PWM duty和PID資料繪出</li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
             <div>飛行測試(在地面用三個自由度的方式測PID)</div>
-            <img src="./img/Simulator1.jpg">
+            <div class="d-flex">
+              <div class="flex-2">
+                <img src="./img/Simulator1.jpg">
+              </div>
+              <div class="flex-1">
+                <ul>
+                  <li class="fragment">提昇安全性</li>
+                  <li class="fragment">加速測試</li>
+                  <li class="fragment">採用萬向軸承，作為支架</li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
             <div>飛行測試(在地面用三個自由度的方式測PID)</div>
@@ -267,11 +294,36 @@
           </section>
           <section>
             <div>練功</div>
-            <img src="./img/oldfailedOne.jpg">
+            <div class="d-flex">
+              <div class="flex-2">
+                <img src="./img/oldfailedOne.jpg">
+              </div>
+              <div class="flex-1">
+                <ul>
+                  <li class="fragment">從零開始學習MCU應用</li>
+                  <li class="fragment">週邊裝置與馬達控制學習</li>
+                  <li class="fragment">電路配置</li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
             <div>超過硬體極限(code space滿了)</div>
-            <img src="./img/OldFailedTwo.jpg">
+            <div class="d-flex">
+              <div class="flex-2">
+                <img src="./img/OldFailedTwo.jpg">
+              </div>
+              <div class="flex-1">
+                <ul>
+                  <li class="fragment">更新六軸感測器造成code space大幅上升</li>
+                    <ul>
+                        <li class="fragment">ADXL345 -> MPU6050</li>
+                        <li class="fragment">Digital motion Proccessor</li>
+                    </ul>
+                  <li class="fragment">過早最佳化是萬惡的根源</li>
+                </ul>
+              </div>
+            </div>
           </section>
         </section>
         <section>
