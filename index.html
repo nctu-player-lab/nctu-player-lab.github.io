@@ -41,6 +41,10 @@
         transform-origin: 50% 50%;
         transform: scale(2);
       }
+      .reveal .progress {
+        background: rgba(0,0,0,.2);
+        color: #1976D2;
+      }
     </style>
   </head>
   <body>
@@ -499,10 +503,6 @@
         </section>
 
         <section>
-          <h2>Q & A</h2>
-        </section>
-
-        <section>
           <section>
             <p>
               <div class="text-left">
@@ -536,7 +536,16 @@
     <script>
       Reveal.initialize({
         history: true,
-        pdfSeparateFragments: true
+        pdfSeparateFragments: true,
+        allottedTime: 15 * 60 * 1000, // 3 minutes
+        defaultTiming: 22.5, // 22.5 second per slide
+        // - (optional) height of page/time progress bar
+        progressBarHeight: 5,
+        // - (optional) bar color
+        barColor: '#FF9800',
+        dependencies: [
+          { src: 'plugin/elapsed-time-bar/elapsed-time-bar.js'}
+        ]
       });
     </script>
   </body>
